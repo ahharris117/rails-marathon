@@ -1,0 +1,17 @@
+<h1>Add an new house member</h1>
+
+<%= form_for([@house, @member]) do |f| %>
+    <div class="field">
+        <%= f.label :first_name %><br />
+        <%= f.text_field :first_name %>
+    </div>
+
+    <div class="field">
+        <%= f.label :last_name %><br />
+        <%= f.text_field :last_name %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
